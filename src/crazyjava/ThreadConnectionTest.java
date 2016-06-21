@@ -10,11 +10,6 @@ public class ThreadConnectionTest {
 		
 		new DepositThread("存款者甲", accountTest, 800).start();
 		new DrawThreadTest("取钱者1", accountTest, 800).start();
-//		new DrawThreadTest("取钱者2", accountTest, 800).start();
-//		new DrawThreadTest("取钱者3", accountTest, 800).start();
-		
-//		new DepositThread("存款者乙", accountTest, 800).start();
-//		new DepositThread("存款者丙", accountTest, 800).start();
 	}
 }
 //取钱

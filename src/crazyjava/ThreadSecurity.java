@@ -1,23 +1,15 @@
 package crazyjava;
 
 import java.util.concurrent.locks.ReentrantLock;
-
 public class ThreadSecurity {
-
 	public static void main(String[] args) {
 		Account account = new Account("1234567",1000);
 		new DrawThread("甲", account, 800).start();
 		new DrawThread("乙", account, 800).start();
-
 	}
-
 }
-
-
 class Account{
-	
 	private final ReentrantLock lock = new ReentrantLock();
-	
 	private String accountNo;
 	private double balance;
 	public Account(){}
@@ -51,7 +43,6 @@ class Account{
 		}
 		return false;
 	}
-	
 	public  void draw(double drawAccount){
 		lock.lock();
 		if (balance >= drawAccount) {
@@ -104,7 +95,6 @@ class DrawThread extends Thread{
 		account.draw(drawAccount);
 		
 	}
-	
 }
 
 
