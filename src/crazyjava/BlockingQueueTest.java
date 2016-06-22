@@ -9,8 +9,8 @@ public class BlockingQueueTest {
 		
 		BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(1);
 		new Producer(blockingQueue).start();
-		new Producer(blockingQueue).start();
-		new Producer(blockingQueue).start();
+//		new Producer(blockingQueue).start();
+//		new Producer(blockingQueue).start();
 		//启动了3个生产者向BlockingQueue集合放入元素，启动一个消费者线程从BlockingQueue集合取出元素。本程序的BlockingQueue集合容量为	
 		//因此3个生产者无法连续放入元素，必须等待消费者线程取出一个元素后，3个生产者线程中的其中之一才能放入一个元素
 		new Consumer(blockingQueue).start();
@@ -30,7 +30,7 @@ class Producer extends Thread{
 				"Struts",
 				"Spring"
 		};
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 10; i++) {
 			System.out.println(getName() + "生产中....");
 			try {
 				Thread.sleep(200);
