@@ -2,7 +2,6 @@ package crazyjava;
 
 public class PrimitiveTransferTest {
 
-	
 	/*
 	 * 方法重载 方法名相同，形参不同
 	 * 
