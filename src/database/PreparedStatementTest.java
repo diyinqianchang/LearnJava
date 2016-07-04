@@ -6,7 +6,6 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.Properties;
 
-import javax.xml.stream.events.StartDocument;
 
 public class PreparedStatementTest {
 
@@ -27,7 +26,7 @@ public class PreparedStatementTest {
 	}
 	
 	public void insertUseStatement() throws Exception {
-		long  start = System.currentTimeMillis();
+//		long  start = System.currentTimeMillis();
 //		for (int j = 0; j <10; j++) {
 //			System.out.println("insert into haha values("+j+",'zhang"+j+"')");
 //		}
