@@ -20,13 +20,13 @@ public class ThirdThread {
 			public Integer call() throws Exception {
 				int i = 0;
 				for (; i < 100; i++) {
-					System.out.println(Thread.currentThread()+" "+i);
+					System.out.println(Thread.currentThread()+"---> "+i);
 				}
 				return i;
 			}
 		});
 		for (int i = 0; i < 100; i++) {
-			System.out.println(Thread.currentThread().getName()+" "+i);
+			System.out.println(Thread.currentThread().getName()+" ****"+i);
 			if (i==20) {
 				new Thread(task,"有返回值的线程").start();
 			}
