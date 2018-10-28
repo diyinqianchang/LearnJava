@@ -21,8 +21,16 @@ public class crazy {
 		person.name = "李刚";
 		person.say("Java语言很简单，学习很容易");
 		System.out.println(Person.eyeNum);
+		
+		test(5, "疯狂Java","轻量级");
 
 	}
 	
+	public static void test(int a,String ... books) {
+		for (String tmp : books) {
+			System.out.println(tmp);
+		}
+		System.out.println(a);
+	}
 
 }

@@ -4,6 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+/*
+ *  HashMap 允许有null值
+ *  Hashtable 不允许有null值
+ */
+
+
 public class MapTest {
 
 	public static void main(String[] args) {
@@ -11,6 +17,7 @@ public class MapTest {
 		map.put("疯狂Java讲义",109);
 		map.put("疯狂讲义",10);
 		map.put("疯狂Ajax讲义",79);
+		map.put("test", null);
 		System.out.println(map);
 		System.out.println("是否包含iOS讲义"+map.containsKey("疯狂iOS讲义"));
 		for (String string : map.keySet()) {

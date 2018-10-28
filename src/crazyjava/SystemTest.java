@@ -1,7 +1,7 @@
 package crazyjava;
 
 
-//import java.util.Map;
+import java.util.Map;
 
 public class SystemTest {
 
@@ -16,7 +16,8 @@ public class SystemTest {
 		System.out.println("空闲内存"+runtime.freeMemory());
 		System.out.println("总内存"+runtime.totalMemory());
 		//打开记事本程序
-	    runtime.exec("notepad");
+//	    runtime.exec("notepad");
+		System.out.println(System.currentTimeMillis());
 
 	}
 

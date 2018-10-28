@@ -2,6 +2,7 @@ package filejava;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -69,6 +70,20 @@ class Person implements Serializable{
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	private void writeObjcet(java.io.ObjectOutputStream out)throws IOException {
+		
+		out.writeObject(new StringBuffer(name).reverse());
+		out.writeInt(age);
+	}
+	
+	private void readObject(java.io.ObjectInputStream in) throws IOException, ClassNotFoundException {
+		
+		this.name = ((StringBuffer)in.readObject()).reverse().toString();
+		this.age = in.readInt();
+	}
+	
+	
 }
 class Teacher implements Serializable{
 	/**

@@ -46,6 +46,8 @@ public class COllectionTest {
 				iterator.remove();
 			}*/
 		}
+		iterator.forEachRemaining(obj->System.out.println(obj));
+		
 		for (String string : books) {
 			System.out.println(string);
 		}

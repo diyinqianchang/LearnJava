@@ -34,7 +34,7 @@ public class StringNodeTest {
 			sw.write("还有姑娘的酒窝\n");
 			System.out.println(sw.toString());
 		} catch (Exception e) {
-			// TODO: handle exception
+
 		}
 		
 		

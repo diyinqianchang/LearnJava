@@ -17,23 +17,23 @@ interface Addable{
 }
 public class LambdaTest {
 
-//	public void eat(Eatable e){
-//		System.out.println(e);
-//		e.taste();
-//	}
-//	public void drive(Flyable f){
-//		System.out.println(f);
-//		f.fly("映日荷花别样红");
-//	}
-//	public void test(Addable add){
-//		System.out.println("5与3的和为："+add.add(5, 3));
-//	}
+	public void eat(Eatable e){
+		System.out.println(e);
+		e.taste();
+	}
+	public void drive(Flyable f){
+		System.out.println(f);
+		f.fly("映日荷花别样红");
+	}
+	public void test(Addable add){
+		System.out.println("5与3的和为："+add.add(5, 3));
+	}
 	public static void main(String[] args) {
-//		LambdaTest lq = new LambdaTest();
+		LambdaTest lq = new LambdaTest();
 //		
-//		Eatable eatable = ()->System.out.println("haha");
-//		lq.eat(eatable);
-//		
+		Eatable eatable = ()->System.out.println("haha");
+		lq.eat(eatable);
+
 //		lq.eat(()->System.out.println("苹果味道不错"));
 //		lq.eat(new Eatable() {
 //			
@@ -63,11 +63,11 @@ public class LambdaTest {
 //				return a+b;
 //			}
 //		});
-		Converter converter1 = from -> Integer.valueOf(from);
-		Integer val = converter1.convert("99");
-		System.out.println(val);
-		Converter converter2 = Integer::valueOf;
-		System.out.println(converter2.convert("23"));
+//		Converter converter1 = from -> Integer.valueOf(from);
+//		Integer val = converter1.convert("99");
+//		System.out.println(val);
+//		Converter converter2 = Integer::valueOf;
+//		System.out.println(converter2.convert("23"));
 	}
 	
 

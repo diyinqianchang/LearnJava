@@ -26,7 +26,7 @@ public class StringTest {
 		sBuffer.append("java");
 		System.out.println(sBuffer);
 		System.out.println(sBuffer.insert(0, "hello  "));
-		System.out.println(sBuffer.replace(5, 6, ","));
+		System.out.println(sBuffer.replace(5, 6, ",,,"));
 		System.out.println(sBuffer.reverse());
 		System.out.println(sBuffer.length());
 		System.out.println(sBuffer.capacity());
