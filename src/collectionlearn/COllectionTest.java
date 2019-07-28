@@ -8,6 +8,7 @@ import java.util.Iterator;
 public class COllectionTest {
 
 	public static void main(String[] args) {
+
 		Collection<Object> collection = new ArrayList<>();
 		collection.add("ËïÎò¿Õ");
 		collection.add(6);
@@ -51,11 +52,6 @@ public class COllectionTest {
 		for (String string : books) {
 			System.out.println(string);
 		}
-		
-		
-		
-		
-
 	}
 
 }
