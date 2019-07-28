@@ -14,7 +14,9 @@ public class RandomLearn {
 		
 		ThreadLocalRandom tlR = ThreadLocalRandom.current();
 		int vall = tlR.nextInt(4,20);
+
 		System.out.println(vall);
+
 
 	}
 
